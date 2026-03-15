@@ -9,7 +9,9 @@ dotenv.config();
 const app = express();
 
 app.use(express.json());
-
+app.get("/", (req,res)=>{
+  res.send("API running");
+});
 app.use(cors({
   origin: "https://your-netlify-site.netlify.app"
 }));
