@@ -13,7 +13,7 @@ app.get("/", (req,res)=>{
   res.send("API running");
 });
 app.use(cors({
-  origin: "https://your-netlify-site.netlify.app"
+  origin: "https://strength-ttt.netlify.app"
 }));
 
 mongoose.connect(process.env.MONGO_URI)
